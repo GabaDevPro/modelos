@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="pt-PT">
+<head><meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leonor Vaz · Nutrição | Nutricionista no Porto (modelo de demonstração)</title>
+<meta name="description" content="Modelo de demonstração (versão com movimento): landing page com marcação online de consultas para um consultório de nutrição fictício no Porto.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FBF7EF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%231F3A2C%27/%3E%3Cpath d=%27M9 23C9 14 14 9 24 8c0 10-5 15-14 15z%27 fill=%27%23EE8566%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+/* Os estados "antes de aparecer" só valem com html.js-mov: sem JS, ou com
+   "reduzir movimento" no sistema, tudo aparece parado e legível. */
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-mov');
+</script>
+  <script defer src="./assets/index-BI-9saeq.js"></script>
+  <link rel="stylesheet" href="./assets/style-BYRZwdU9.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 1 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2.5"/><path d="M8 21h8M12 17v4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.2-4A8 8 0 1 1 20 12z"/><path d="M9 11.5h6M9 14.5h3.5"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15"/><path d="M5 19c3-4 6-7 10-9"/></symbol>
+</svg>
+
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<div class="demo" role="note"><b aria-hidden="true"></b>Modelo de demonstração · negócio fictício</div>
+<header class="hdr" id="cab">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Leonor Vaz · Nutrição, início">
+      <div class="av" aria-hidden="true">LV</div>
+      <span><span class="b1">Leonor Vaz</span><span class="b2">Nutrição</span></span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#marcar">Marcação</a></li>
+        <li><a href="#testemunhos">Testemunhos</a></li>
+        <li><a href="#faq">Perguntas</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#marcar">Marcar consulta</a>
+  </div>
+  <div class="prog" id="prog" aria-hidden="true"></div>
+</header>
+
+<main id="conteudo">
+
+<!-- ABERTURA: o túnel (React) monta-se aqui -->
+<div id="tunel-raiz"></div>
+<noscript>
+  <section class="sec ns-hero">
+    <div class="wrap">
+      <h1>Nutrição <em>personalizada</em> no Porto</h1>
+      <p class="lead">Um plano alimentar pensado para a sua rotina, sem dietas milagre e com o acompanhamento de quem o ouve.</p>
+      <p style="margin-top:20px"><a class="btn btn-primary" href="#marcar">Marcar consulta</a></p>
+    </div>
+  </section>
+</noscript>
+
+<!-- COMO FUNCIONA -->
+<section class="sec" id="como">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-mov="sobe">Como funciona</p>
+      <h2 data-mov="linhas">Do primeiro contacto<br>ao seu plano, em três passos</h2>
+    </div>
+    <ol class="how" data-mov="cascata">
+      <li><span class="n" aria-hidden="true">1</span><h3>Marque online</h3><p>Escolha o tipo de consulta, o dia e a hora em menos de 1 minuto.</p></li>
+      <li><span class="n" aria-hidden="true">2</span><h3>Conversamos</h3><p>Ouço a sua rotina, os seus gostos e aquilo que já tentou.</p></li>
+      <li><span class="n" aria-hidden="true">3</span><h3>Segue o seu plano</h3><p>Recebe um plano à sua medida e o acompanhamento para o manter.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="sec sec-top0" id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-mov="sobe">Serviços</p>
+      <h2 data-mov="linhas">Escolha a consulta<br>que melhor se adapta a si</h2>
+      <p data-mov="sobe" style="--d:.15s">Todas partem de uma conversa sobre a sua rotina e terminam com um plano claro, simples de seguir.</p>
+    </div>
+    <div class="svc-grid" data-mov="cascata">
+      <article class="svc">
+        <div class="ico" aria-hidden="true"><svg class="ic"><use href="#i-pin"/></svg></div>
+        <h3>Consulta presencial</h3>
+        <p>Avaliação completa no consultório, no centro do Porto.</p>
+        <ul>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Avaliação da composição corporal</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Plano alimentar à medida</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Lista de compras e material de apoio</li>
+        </ul>
+        <div class="svc-foot">
+          <div class="meta"><span class="dur"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>60 min</span><span class="price">50 €</span></div>
+          <a class="btn btn-ghost" href="#marcar" data-pick="presencial">Marcar esta consulta</a>
+        </div>
+      </article>
+      <article class="svc">
+        <div class="ico" aria-hidden="true"><svg class="ic"><use href="#i-video"/></svg></div>
+        <h3>Consulta online</h3>
+        <p>A mesma atenção, por videochamada, a partir de onde estiver.</p>
+        <ul>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Sem deslocações nem trânsito</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Plano alimentar enviado por email</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Ideal para rotinas apertadas</li>
+        </ul>
+        <div class="svc-foot">
+          <div class="meta"><span class="dur"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>45 min</span><span class="price">45 €</span></div>
+          <a class="btn btn-ghost" href="#marcar" data-pick="online">Marcar esta consulta</a>
+        </div>
+      </article>
+      <article class="svc hl">
+        <div class="ico" aria-hidden="true"><svg class="ic"><use href="#i-heart"/></svg></div>
+        <h3>Acompanhamento mensal</h3>
+        <p>Para quem quer resultados que duram, com apoio ao longo do mês.</p>
+        <ul>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>2 sessões de 30 min por mês</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Ajustes ao plano e apoio por mensagem</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Relatório de evolução mensal</li>
+        </ul>
+        <div class="svc-foot">
+          <div class="meta"><span class="dur"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>30 min / sessão</span><span class="price">120 €<small>/mês</small></span></div>
+          <a class="btn btn-peach" href="#marcar" data-pick="mensal">Marcar o acompanhamento</a>
+        </div>
+      </article>
+    </div>
+    <p class="note">Preços fictícios, apenas para este modelo de demonstração.</p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sec about" id="sobre">
+  <div class="wrap about-grid">
+    <div class="portrait">
+      <svg viewBox="0 0 360 440" role="img" aria-label="Avatar com as iniciais LV" data-mov="par">
+        <defs><linearGradient id="gP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A8C3A4"/><stop offset="1" stop-color="#4F7560"/></linearGradient></defs>
+        <rect width="360" height="440" fill="url(#gP)"/>
+        <circle cx="296" cy="86" r="56" fill="#FBD9C8" opacity=".92"/>
+        <path d="M0 0C-34-46-34-112 0-160 34-112 34-46 0 0z" fill="#2C4C3B" opacity=".5" transform="translate(40 450) rotate(-18)"/>
+        <path d="M0 0C-34-46-34-112 0-160 34-112 34-46 0 0z" fill="#1F3A2C" opacity=".45" transform="translate(320 450) rotate(22)"/>
+        <path d="M0 0C-26-36-26-88 0-124 26-88 26-36 0 0z" fill="#6B8F71" opacity=".7" transform="translate(110 450) rotate(8)"/>
+        <circle cx="180" cy="196" r="98" fill="#FBF7EF"/>
+        <text x="180" y="224" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="78" font-weight="600" fill="#1F3A2C">LV</text>
+      </svg>
+    </div>
+    <div>
+      <p class="eyebrow" data-mov="sobe">Sobre</p>
+      <h2 data-mov="linhas">Olá, sou a<br>Dra. Leonor Vaz</h2>
+      <p class="t" data-mov="sobe" style="--d:.1s">Sou nutricionista no Porto e acredito que comer bem não tem de ser um castigo. Ajudo pessoas a criar hábitos alimentares que se mantêm no dia a dia, sem dietas milagre e sem culpa.</p>
+      <p class="t" data-mov="sobe" style="--d:.2s">Cada consulta começa por ouvir: a sua história, a sua rotina, o que já tentou e aquilo de que realmente gosta. O plano nasce daí.</p>
+      <ul class="chips" aria-label="Áreas de atuação" data-mov="cascata">
+        <li>Perda de peso sustentável</li>
+        <li>Nutrição desportiva</li>
+        <li>Gravidez e amamentação</li>
+        <li>Intolerâncias e saúde digestiva</li>
+      </ul>
+      <p class="cred" data-mov="sobe" style="--d:.2s"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg>Nutricionista · Cédula profissional n.º 0000N</p>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO: acende palavra a palavra com o scroll -->
+<section class="manifesto" id="manifesto" aria-label="Manifesto">
+  <div class="manifesto-palco">
+    <p class="manifesto-txt" id="manifesto-txt"><span class="frase">Sem dietas milagre.</span> <span class="frase">Sem listas de proibidos.</span> <span class="frase">Um plano que cabe na <em class="mm">sua rotina</em> e um acompanhamento que <em class="mm v">não o deixa sozinho.</em></span></p>
+  </div>
+</section>
+
+<!-- RESULTADOS: antes/depois com ilustrações (nada de fotografias nem pessoas reais) -->
+<section class="sec res" id="resultados">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-mov="sobe">Resultados</p>
+      <h2 data-mov="linhas">Resultados que se veem<br>e se sentem</h2>
+    </div>
+    <div class="res-grid">
+      <figure class="res-cmp" data-mov="sobe">
+        <div class="cmp-box" id="cmp">
+          <!-- ANTES: fica por cima e é cortada pela alça (clip-path) -->
+          <div class="cmp-cam cmp-antes">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Antes: às 15:00, prato vazio e café, sacos de fast-food, energia a 20%, uma nuvem cinzenta e a personagem cansada, de ombros caídos.">
+              <rect width="400" height="300" fill="#E2DFD7"/>
+              <rect y="262" width="400" height="38" fill="#C9C4B8"/>
+              <g fill="#9DA3A8"><circle cx="172" cy="68" r="14"/><circle cx="192" cy="58" r="19"/><circle cx="212" cy="68" r="13"/><rect x="164" y="66" width="56" height="16" rx="8"/></g>
+              <rect x="34" y="70" width="14" height="6" rx="2" fill="#C8483A"/>
+              <rect x="24" y="76" width="34" height="66" rx="8" fill="#fff" stroke="#C8483A" stroke-width="3"/>
+              <rect x="29" y="127.2" width="24" height="11.8" rx="3" fill="#C8483A"/>
+              <text x="41" y="163" text-anchor="middle" font-size="15" font-weight="700" fill="#A63A2D">20%</text>
+              <text x="41" y="178" text-anchor="middle" font-size="10.5" font-weight="600" fill="#5F655F">energia</text>
+              <circle cx="306" cy="84" r="26" fill="#F2EFE8" stroke="#5A625C" stroke-width="3"/>
+              <path d="M306 63v4M306 101v4M285 84h4M323 84h4" stroke="#5A625C" stroke-width="2" stroke-linecap="round"/>
+              <path d="M306 84h12M306 84V68" stroke="#3A423C" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="306" cy="84" r="2.5" fill="#3A423C"/>
+              <text x="306" y="127" text-anchor="middle" font-size="13" font-weight="700" fill="#4A524C">15:00</text>
+              <rect x="228" y="211" width="8" height="51" fill="#9C9484"/><rect x="380" y="211" width="8" height="51" fill="#9C9484"/>
+              <rect x="220" y="202" width="176" height="9" rx="4.5" fill="#B3AA98"/>
+              <ellipse cx="250" cy="200" rx="27" ry="6.5" fill="#F6F4EE" stroke="#C2BCAE" stroke-width="1.5"/>
+              <ellipse cx="250" cy="199.5" rx="17" ry="3.6" fill="none" stroke="#DDD8CC"/>
+              <g fill="#B89066"><circle cx="243" cy="199.5" r="1.4"/><circle cx="255" cy="200.5" r="1.4"/><circle cx="259" cy="198.8" r="1.1"/></g>
+              <path d="M290 174q-4-6 0-10M298 174q-4-6 0-10" fill="none" stroke="#A9A69E" stroke-width="2" stroke-linecap="round"/>
+              <path d="M308 187q9 0 9 7t-9 7" fill="none" stroke="#B8B2A5" stroke-width="3"/>
+              <rect x="286" y="181" width="22" height="21" rx="5" fill="#fff" stroke="#B8B2A5" stroke-width="1.5"/>
+              <ellipse cx="297" cy="181.5" rx="11" ry="3" fill="#6B4A36"/>
+              <path d="M324 202L328 174H350L352 202Z" fill="#C99A63"/>
+              <path d="M326 175l5-8 5 6 5-7 5 9z" fill="#B58552"/>
+              <rect x="326" y="188" width="24" height="6" fill="#C0452F"/>
+              <path d="M344 202L348 170H372L376 202Z" fill="#D9AA72"/>
+              <path d="M346 171l5-9 6 6 5-8 6 9z" fill="#C28F5B"/>
+              <rect x="346" y="186" width="28" height="7" fill="#C0452F"/>
+              <path d="M379 202L381 178H393L395 202Z" fill="#fff" stroke="#B8B2A5" stroke-width="1.2"/>
+              <rect x="379.5" y="174" width="14" height="4" rx="2" fill="#7D7A72"/>
+              <path d="M386 174L389 162L394 160" fill="none" stroke="#C0452F" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M281 254L314 249V262L281 259Z" fill="#fff" stroke="#B8B2A5" stroke-width="1.5"/>
+              <path d="M294 252L303 251V261L294 260Z" fill="#C0452F"/>
+              <ellipse cx="314" cy="255.5" rx="3" ry="6.5" fill="#E5E1D8" stroke="#B8B2A5"/>
+              <circle cx="350" cy="255" r="7" fill="#F6F4EE" stroke="#C2BCAE" stroke-width="1.5"/>
+              <ellipse cx="140" cy="264" rx="52" ry="4" fill="#000" opacity=".08"/>
+              <rect x="107" y="204" width="30" height="52" rx="11" fill="#2C4C3B"/><rect x="143" y="204" width="30" height="52" rx="11" fill="#2C4C3B"/>
+              <rect x="103" y="254" width="35" height="9" rx="4.5" fill="#2A2A2A"/><rect x="142" y="254" width="35" height="9" rx="4.5" fill="#2A2A2A"/>
+              <path d="M104 206Q88 184 102 162Q116 150 140 153Q164 150 178 162Q192 184 176 206Q160 220 140 220Q120 220 104 206Z" fill="#6B8F71"/>
+              <path d="M120 201Q140 212 160 201" fill="none" stroke="#5F8366" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M114 168Q95 192 99 214M166 168Q185 192 181 214" fill="none" stroke="#5F8366" stroke-width="17" stroke-linecap="round"/>
+              <circle cx="99" cy="220" r="8" fill="#F0C3A3"/><circle cx="181" cy="220" r="8" fill="#F0C3A3"/>
+              <g transform="translate(-4 10) rotate(-9 140 134)">
+                <rect x="130" y="124" width="20" height="22" rx="7" fill="#E3AE8A"/>
+                <circle cx="140" cy="80" r="12" fill="#3B2B26"/>
+                <circle cx="140" cy="108" r="26" fill="#3B2B26"/>
+                <ellipse cx="140" cy="113" rx="24" ry="23" fill="#F0C3A3"/>
+                <path d="M116 109C116 91 164 91 164 109C156 102 148 100 140 100C132 100 124 102 116 109Z" fill="#3B2B26"/>
+                <path d="M128 133Q140 139 152 133" fill="none" stroke="#E3AE8A" stroke-width="2" stroke-linecap="round"/>
+                <g fill="#EE8566" opacity=".3"><circle cx="123" cy="125" r="5"/><circle cx="157" cy="125" r="5"/></g>
+                <path d="M126 108L135 104M154 108L145 104" stroke="#3B2B26" stroke-width="2.4" stroke-linecap="round"/>
+                <circle cx="131" cy="115" r="2.6" fill="#3B2B26"/><circle cx="149" cy="115" r="2.6" fill="#3B2B26"/>
+                <path d="M127 120q-3 4-3 6a3 3 0 0 0 6 0q0-2-3-6z" fill="#9FD2E4"/>
+                <path d="M133 128Q140 121 147 128" fill="none" stroke="#3B2B26" stroke-width="2.4" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span class="cmp-tag">Antes</span>
+          </div>
+          <!-- DEPOIS: por baixo, aparece à medida que a alça recua -->
+          <div class="cmp-cam cmp-depois">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Depois: às 15:00, prato equilibrado e colorido, garrafa de água, ténis de caminhada, energia a 90%, sol e a personagem sorridente e direita.">
+              <rect width="400" height="300" fill="#FDEEE5"/>
+              <rect y="262" width="400" height="38" fill="#EADCC0"/>
+              <circle cx="190" cy="62" r="50" fill="#FBD9C8" opacity=".6"/>
+              <circle cx="190" cy="62" r="15" fill="#F5B63E"/>
+              <path d="M190 28v8M190 88v8M156 62h8M216 62h8M166 38l6 6M208 80l6 6M214 38l-6 6M172 80l-6 6" fill="none" stroke="#F5B63E" stroke-width="3.2" stroke-linecap="round"/>
+              <rect x="34" y="70" width="14" height="6" rx="2" fill="#2E8B57"/>
+              <rect x="24" y="76" width="34" height="66" rx="8" fill="#fff" stroke="#2E8B57" stroke-width="3"/>
+              <rect x="29" y="86" width="24" height="53" rx="3" fill="#2E8B57"/>
+              <text x="41" y="163" text-anchor="middle" font-size="15" font-weight="700" fill="#1F6B42">90%</text>
+              <text x="41" y="178" text-anchor="middle" font-size="10.5" font-weight="600" fill="#536257">energia</text>
+              <circle cx="306" cy="84" r="26" fill="#fff" stroke="#1F3A2C" stroke-width="3"/>
+              <path d="M306 63v4M306 101v4M285 84h4M323 84h4" stroke="#1F3A2C" stroke-width="2" stroke-linecap="round"/>
+              <path d="M306 84h12M306 84V68" stroke="#1F3A2C" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="306" cy="84" r="2.5" fill="#EE8566"/>
+              <text x="306" y="127" text-anchor="middle" font-size="13" font-weight="700" fill="#1F3A2C">15:00</text>
+              <rect x="228" y="211" width="8" height="51" fill="#B58F5E"/><rect x="380" y="211" width="8" height="51" fill="#B58F5E"/>
+              <rect x="220" y="202" width="176" height="9" rx="4.5" fill="#C9A878"/>
+              <ellipse cx="255" cy="200" rx="33" ry="8.5" fill="#fff" stroke="#A8C3A4" stroke-width="2"/>
+              <ellipse cx="255" cy="199" rx="24" ry="5.6" fill="#F3ECDD"/>
+              <g fill="#6B8F71"><circle cx="243" cy="194" r="5.5"/><circle cx="249" cy="191.5" r="5"/><circle cx="238" cy="197" r="4"/></g>
+              <ellipse cx="260" cy="196" rx="9" ry="4.3" fill="#F2A488" transform="rotate(-8 260 196)"/>
+              <ellipse cx="273" cy="197" rx="6" ry="3.4" fill="#F3C969"/>
+              <circle cx="266" cy="201.5" r="3.4" fill="#E0552F"/><circle cx="251" cy="201.5" r="3.1" fill="#E0552F"/>
+              <rect x="302" y="157" width="10" height="8" rx="2" fill="#1F3A2C"/>
+              <rect x="298" y="164" width="18" height="38" rx="7" fill="#DCEFF5" stroke="#6FA7BC" stroke-width="2"/>
+              <rect x="300" y="174" width="14" height="26" rx="5" fill="#9FD2E4"/>
+              <path d="M303 170v14" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+              <circle cx="340" cy="190" r="11" fill="#E0552F"/>
+              <path d="M340 180q1-5 5-6" fill="none" stroke="#3E6350" stroke-width="2" stroke-linecap="round"/>
+              <ellipse cx="346" cy="177" rx="5" ry="2.6" fill="#6B8F71" transform="rotate(-25 346 177)"/>
+              <circle cx="366" cy="193" r="9" fill="#F4A23C"/>
+              <g transform="translate(268 240)"><path d="M3 15V4Q3 1 6 1H14Q16 7 22 8L34 10Q44 12 44 15Z" fill="#EE8566"/><rect y="15" width="44" height="7" rx="3.5" fill="#fff" stroke="#D9CBB0"/><path d="M7 11Q20 7 33 11" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M15 4l5 3M19 2l5 3" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></g>
+              <g transform="translate(318 240)"><path d="M3 15V4Q3 1 6 1H14Q16 7 22 8L34 10Q44 12 44 15Z" fill="#EE8566"/><rect y="15" width="44" height="7" rx="3.5" fill="#fff" stroke="#D9CBB0"/><path d="M7 11Q20 7 33 11" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M15 4l5 3M19 2l5 3" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></g>
+              <ellipse cx="140" cy="264" rx="44" ry="4" fill="#000" opacity=".08"/>
+              <path d="M118 190H140Q142 214 138 230Q136 244 136 256H123Q123 244 120 230Q116 212 118 190Z" fill="#2C4C3B"/>
+              <path d="M162 190H140Q138 214 142 230Q144 244 144 256H157Q157 244 160 230Q164 212 162 190Z" fill="#2C4C3B"/>
+              <path d="M121 196Q119 214 123 230Q125 244 126 252M159 196Q161 214 157 230Q155 244 154 252" fill="none" stroke="#EE8566" stroke-width="2" stroke-linecap="round"/>
+              <rect x="113" y="254" width="27" height="9" rx="4.5" fill="#2A2A2A"/><rect x="140" y="254" width="27" height="9" rx="4.5" fill="#2A2A2A"/>
+              <rect x="177" y="250" width="5" height="12" rx="2" fill="#EE8566"/><rect x="182" y="254.5" width="10" height="3" fill="#1F3A2C"/><rect x="192" y="250" width="5" height="12" rx="2" fill="#EE8566"/>
+              <path d="M106 158Q106 146 122 144H158Q174 146 174 158L160 188H120Z" fill="#F0C3A3"/>
+              <rect x="118" y="188" width="44" height="8" rx="4" fill="#1F3A2C"/>
+              <path d="M134 183.5h12M140 180V187" stroke="#E3AE8A" stroke-width="1.6" stroke-linecap="round"/>
+              <g fill="none" stroke="#EBB899" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M114 155L98 177L117 196" stroke-width="13"/>
+                <path d="M166 155L194 165" stroke-width="15"/>
+                <path d="M194 165L196 137" stroke-width="13"/>
+              </g>
+              <circle cx="113" cy="156" r="8.5" fill="#EBB899"/><circle cx="167" cy="156" r="9" fill="#EBB899"/>
+              <ellipse cx="184" cy="157" rx="9" ry="7" transform="rotate(20 184 157)" fill="#EBB899"/>
+              <path d="M176 156Q184 148 194 157" fill="none" stroke="#E3AE8A" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="196" cy="130" r="8" fill="#EBB899"/><path d="M191.5 129h9" stroke="#E3AE8A" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="117" cy="196" r="6.5" fill="#EBB899"/>
+              <path d="M118 146H125Q128 160 140 160Q152 160 155 146H162L167 172Q140 181 113 172Z" fill="#6B8F71"/>
+              <path d="M113.5 172Q140 181 166.5 172" fill="none" stroke="#EE8566" stroke-width="3" stroke-linecap="round"/>
+              <path d="M214 112l2.2-5.5 2.2 5.5 5.5 2.2-5.5 2.2-2.2 5.5-2.2-5.5-5.5-2.2z" fill="#EE8566"/>
+              <g>
+                <rect x="133" y="126" width="14" height="20" rx="5" fill="#E3AE8A"/>
+                <circle cx="140" cy="80" r="11" fill="#3B2B26"/>
+                <circle cx="140" cy="108" r="23" fill="#3B2B26"/>
+                <circle cx="140" cy="111" r="20" fill="#F0C3A3"/>
+                <path d="M120 108C120 92 160 92 160 108C153 102 147 100 140 100C133 100 127 102 120 108Z" fill="#3B2B26"/>
+                <path d="M130 112q4-5 8 0M142 112q4-5 8 0" fill="none" stroke="#3B2B26" stroke-width="2.6" stroke-linecap="round"/>
+                <path d="M131 119Q140 133 149 119Z" fill="#fff" stroke="#3B2B26" stroke-width="2.4" stroke-linejoin="round"/>
+                <g fill="#EE8566" opacity=".35"><circle cx="126" cy="119" r="4"/><circle cx="154" cy="119" r="4"/></g>
+              </g>
+            </svg>
+            <span class="cmp-tag">Depois</span>
+          </div>
+          <input class="cmp-range" type="range" min="0" max="100" step="1" value="50" autocomplete="off" aria-label="Comparar antes e depois">
+          <span class="cmp-alca" aria-hidden="true"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="20"/><path d="M18 15l-7 7 7 7M26 15l7 7-7 7"/></svg></span>
+        </div>
+        <figcaption>Arraste a alça para comparar o antes e o depois.</figcaption>
+      </figure>
+
+      <ul class="res-met" data-mov="cascata" aria-label="Números do caso">
+        <li><span class="met-n" aria-hidden="true"><span data-conta="9" data-pre="−">−9</span><small>kg</small></span><span class="sr">Menos 9 quilos </span><span class="met-t">em 6 meses</span></li>
+        <li><span class="met-n" aria-hidden="true"><span data-conta="3" data-suf="×">3×</span></span><span class="sr">3 vezes </span><span class="met-t">mais energia ao fim do dia (autoavaliação)</span></li>
+        <li><span class="met-n" aria-hidden="true"><span data-conta="100" data-suf="%">100%</span></span><span class="sr">100 por cento </span><span class="met-t">das refeições planeadas na semana</span></li>
+      </ul>
+
+      <figure class="tcard res-quote" data-mov="sobe">
+        <blockquote>Deixei de saltar refeições e voltei a ter energia para brincar com os meus filhos.</blockquote>
+        <figcaption class="who"><span class="i c2" aria-hidden="true">JR</span><div><strong>Joana R.</strong><span>Acompanhamento de 6 meses</span></div></figcaption>
+      </figure>
+
+      <p class="res-nota" role="note"><strong>Caso ilustrativo, com dados fictícios.</strong> No site real, só com fotografias e dados de pacientes que deram autorização por escrito.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARCAÇÃO -->
+<section class="sec book dark" id="marcar">
+  <div class="wrap book-grid">
+    <div class="book-intro">
+      <p class="eyebrow" data-mov="sobe">Marcação online</p>
+      <h2 data-mov="linhas">Marque a sua consulta<br>em menos de 1 minuto</h2>
+      <p data-mov="sobe" style="--d:.15s">Escolha o tipo de consulta, o dia e a hora. Sem telefonemas e sem esperas.</p>
+      <p class="proxima" data-mov="sobe" style="--d:.25s"><svg class="ic" aria-hidden="true"><use href="#i-cal"/></svg><span>Próxima vaga livre: <b id="proxima">a calcular…</b></span></p>
+    </div>
+
+    <div class="card" id="book-card" data-mov="sobe">
+      <noscript><p>A marcação online precisa de JavaScript ativo no navegador.</p></noscript>
+      <ol class="steps" aria-label="Passos da marcação">
+        <li><span class="dot">1</span>Consulta</li>
+        <li><span class="dot">2</span>Dia</li>
+        <li><span class="dot">3</span>Hora</li>
+        <li><span class="dot">4</span>Dados</li>
+      </ol>
+      <p class="sum" id="sum" hidden></p>
+
+      <!-- Passo 1 -->
+      <section class="step" data-step="1" aria-labelledby="h1s">
+        <h3 id="h1s" tabindex="-1">Que tipo de consulta pretende?</h3>
+        <p class="hint">Escolha uma opção para continuar.</p>
+        <div class="opts">
+          <button type="button" class="opt" data-type="presencial" aria-pressed="false" style="--i:0">
+            <span class="ico" aria-hidden="true"><svg class="ic"><use href="#i-pin"/></svg></span>
+            <span><strong>Consulta presencial</strong><small>60 min · 50 € · Rua das Flores, Porto</small></span>
+          </button>
+          <button type="button" class="opt" data-type="online" aria-pressed="false" style="--i:1">
+            <span class="ico" aria-hidden="true"><svg class="ic"><use href="#i-video"/></svg></span>
+            <span><strong>Consulta online</strong><small>45 min · 45 € · Videochamada</small></span>
+          </button>
+          <button type="button" class="opt" data-type="mensal" aria-pressed="false" style="--i:2">
+            <span class="ico" aria-hidden="true"><svg class="ic"><use href="#i-heart"/></svg></span>
+            <span><strong>Acompanhamento mensal</strong><small>30 min por sessão · 120 €/mês</small></span>
+          </button>
+        </div>
+        <div class="nav"><button type="button" class="btn btn-green" id="n1" data-next disabled>Continuar</button></div>
+      </section>
+
+      <!-- Passo 2 -->
+      <section class="step" data-step="2" aria-labelledby="h2s" hidden>
+        <h3 id="h2s" tabindex="-1">Escolha o dia</h3>
+        <p class="hint">Próximas duas semanas, de segunda a sábado.</p>
+        <div class="cal" id="cal" role="group" aria-label="Dias disponíveis"></div>
+        <p class="legend"><i aria-hidden="true"></i>Dia sem vagas</p>
+        <div class="nav">
+          <button type="button" class="btn btn-ghost" data-back>Voltar</button>
+          <button type="button" class="btn btn-green" id="n2" data-next disabled>Continuar</button>
+        </div>
+      </section>
+
+      <!-- Passo 3 -->
+      <section class="step" data-step="3" aria-labelledby="h3s" hidden>
+        <h3 id="h3s" tabindex="-1">Escolha a hora</h3>
+        <p class="hint" id="hint3"></p>
+        <div id="slots"></div>
+        <div class="nav">
+          <button type="button" class="btn btn-ghost" data-back>Voltar</button>
+          <button type="button" class="btn btn-green" id="n3" data-next disabled>Continuar</button>
+        </div>
+      </section>
+
+      <!-- Passo 4 -->
+      <section class="step" data-step="4" aria-labelledby="h4s" hidden>
+        <h3 id="h4s" tabindex="-1">Os seus dados</h3>
+        <p class="hint">Só precisamos do essencial para confirmar a marcação.</p>
+        <form id="book-form" novalidate>
+          <div class="field">
+            <label for="f-nome">Nome completo</label>
+            <input type="text" id="f-nome" name="nome" autocomplete="name" required aria-describedby="e-nome">
+            <p class="err" id="e-nome" role="alert" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-tel">Telemóvel</label>
+            <input type="tel" id="f-tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="9XX XXX XXX" required aria-describedby="e-tel">
+            <p class="err" id="e-tel" role="alert" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" autocomplete="email" placeholder="nome@exemplo.pt" required aria-describedby="e-email">
+            <p class="err" id="e-email" role="alert" hidden></p>
+          </div>
+          <div class="field">
+            <label class="consent" for="f-rgpd">
+              <input type="checkbox" id="f-rgpd" name="rgpd" required aria-describedby="e-rgpd">
+              <span>Aceito o tratamento dos meus dados pessoais para efeitos de marcação e contacto, de acordo com a Política de Privacidade (RGPD).</span>
+            </label>
+            <p class="err" id="e-rgpd" role="alert" hidden></p>
+          </div>
+          <p class="fine-card">Demonstração: os dados ficam apenas neste ecrã e não são enviados a lado nenhum.</p>
+          <div class="nav">
+            <button type="button" class="btn btn-ghost" data-back>Voltar</button>
+            <button type="submit" class="btn btn-primary">Confirmar marcação</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Confirmação -->
+      <section class="step done" data-step="5" aria-labelledby="h5s" hidden>
+        <div class="ok" aria-hidden="true">
+          <svg viewBox="0 0 80 80">
+            <circle class="ok-ring" cx="40" cy="40" r="35" pathLength="1" transform="rotate(-90 40 40)"/>
+            <path class="ok-tick" d="M24 41.5l11 11 21-24" pathLength="1"/>
+          </svg>
+          <span class="burst" id="burst"></span>
+        </div>
+        <h3 id="h5s" tabindex="-1">Marcação confirmada!</h3>
+        <p class="rem">Receberá um lembrete por SMS/email 24 h antes.</p>
+        <dl class="dl" id="done-dl"></dl>
+        <div class="acts">
+          <button type="button" class="btn btn-primary" id="ics"><svg class="ic" aria-hidden="true"><use href="#i-cal"/></svg>Adicionar ao calendário</button>
+          <button type="button" class="btn btn-ghost" id="again">Nova marcação</button>
+        </div>
+        <p class="fine-card">Demonstração: nada foi enviado nem guardado.</p>
+      </section>
+    </div>
+
+    <div class="book-bullets">
+      <ul data-mov="lista">
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Confirmação imediata, no próprio ecrã</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Lembrete por SMS/email 24 h antes</li>
+        <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Pode remarcar até 24 h antes, sem custos</li>
+      </ul>
+      <p class="fine">Esta marcação é uma demonstração: nada é enviado nem guardado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTEMUNHOS -->
+<section class="sec" id="testemunhos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-mov="sobe">Testemunhos</p>
+      <h2 data-mov="linhas">O que dizem as pessoas<br>que acompanhamos</h2>
+    </div>
+    <div class="tgrid">
+      <figure class="tcard" data-mov="cartao">
+        <blockquote>Finalmente um plano que cabe na minha rotina. Como melhor, sem passar fome e sem andar a contar cada caloria.</blockquote>
+        <figcaption class="who"><span class="i" aria-hidden="true">MS</span><div><strong>Marta S.</strong><span>Consulta presencial</span></div></figcaption>
+      </figure>
+      <figure class="tcard" data-mov="cartao">
+        <blockquote>As consultas online pouparam-me deslocações e o acompanhamento mensal manteve-me motivado. Fez toda a diferença.</blockquote>
+        <figcaption class="who"><span class="i c2" aria-hidden="true">RP</span><div><strong>Rui P.</strong><span>Acompanhamento mensal</span></div></figcaption>
+      </figure>
+      <figure class="tcard" data-mov="cartao">
+        <blockquote>A Dra. Leonor explica tudo com calma e sem julgamentos. Saí da primeira consulta a saber exatamente o que fazer.</blockquote>
+        <figcaption class="who"><span class="i c3" aria-hidden="true">IC</span><div><strong>Inês C.</strong><span>Consulta online</span></div></figcaption>
+      </figure>
+    </div>
+    <p class="note">Testemunhos ilustrativos, escritos para este modelo de demonstração.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-top0" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-mov="sobe">Perguntas frequentes</p>
+      <h2 data-mov="linhas">Ainda tem dúvidas?</h2>
+    </div>
+    <div class="faq" data-mov="cascata">
+      <details>
+        <summary>Como decorre a primeira consulta?</summary>
+        <p>Começamos por conversar sobre a sua história, os seus hábitos e os seus objetivos. Segue-se uma avaliação e, no final, recebe um plano alimentar personalizado com orientações simples para pôr em prática logo no dia seguinte.</p>
+      </details>
+      <details>
+        <summary>A consulta online é igual à presencial?</summary>
+        <p>Sim, a conversa e o plano são os mesmos. Na consulta online pedimos-lhe apenas alguns dados que pode medir em casa, como o peso e a altura, e a ligação de videochamada é enviada por email.</p>
+      </details>
+      <details>
+        <summary>Posso remarcar ou cancelar a consulta?</summary>
+        <p>Pode, sem custos, até 24 h antes da hora marcada. Basta responder ao lembrete que recebe por SMS ou email.</p>
+      </details>
+      <details>
+        <summary>Emite fatura com o meu NIF?</summary>
+        <p>Sim. Todas as consultas têm fatura-recibo, e pode indicar o seu NIF no início da consulta.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">
+          <div class="av" aria-hidden="true">LV</div>
+          <span><span class="b1">Leonor Vaz · Nutrição</span><span class="b2">Porto</span></span>
+        </div>
+        <p style="margin-top:14px;max-width:26em">Nutrição personalizada, presencial e online. Comer bem, sem complicações.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <address>Rua das Flores, 000, Porto<br>Telefone: +351 900 000 000<br>Cédula profissional n.º 0000N</address>
+      </div>
+      <div>
+        <h4>Horário</h4>
+        <address>Segunda a sexta: 09:00 – 20:00<br>Sábado: 09:00 – 13:00<br>Domingo: encerrado</address>
+      </div>
+    </div>
+    <div class="foot-bar">Nomes, morada, telefone e cédula são inventados.</div>
+    <div class="demo demo-foot" role="note"><b aria-hidden="true"></b>Modelo de demonstração · negócio fictício</div>
+  </div>
+</footer>
+
+<!-- WhatsApp (demonstração) -->
+<div class="wa dark">
+  <div class="wa-note" id="wa-note" role="status" hidden>
+    <strong>Demonstração</strong>
+    No site real, abre a conversa no WhatsApp do consultório
+    <button type="button" class="wa-x" id="wa-x" aria-label="Fechar aviso">&times;</button>
+  </div>
+  <button type="button" class="wa-btn" id="wa-btn" aria-label="Falar no WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></button>
+</div>
+
+</body>
+</html>
