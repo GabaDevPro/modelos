@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Doçaria Marta Seabra · Encomendas online (modelo de demonstração)</title>
+<meta name="description" content="Modelo de demonstração: página de encomendas online para uma pastelaria de Aveiro (negócio fictício).">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FBF3E4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%23134366%27/%3E%3Cpath d=%27M16 7c-6 0-10 5-11 10 0 2 2 4 4 3 1 2 4 3 7 3s6-1 7-3c2 1 4-1 4-3-1-5-5-10-11-10z%27 fill=%27%23E6A94A%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="./assets/index-Cg8LgwgI.js"></script>
+  <link rel="stylesheet" href="./assets/style-DiOslXNO.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+ <!-- ovos moles em concha -->
+ <symbol id="i-ovos" viewBox="0 0 100 100">
+  <path d="M50 18c-22 0-38 20-40 38 0 8 8 14 16 12 5 6 14 8 24 8s19-2 24-8c8 2 16-4 16-12-2-18-18-38-40-38z" fill="#e6a94a" stroke="#8f5518" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M50 24v46M36 28l6 42M64 28l-6 42M26 38l12 32M74 38l-12 32" stroke="#8f5518" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M30 46c6-8 14-12 20-12s14 4 20 12" stroke="#fff3d6" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+ </symbol>
+ <!-- bolo aniversario -->
+ <symbol id="i-aniv" viewBox="0 0 100 100">
+  <rect x="16" y="52" width="68" height="34" rx="6" fill="#f3d3a0" stroke="#8f5518" stroke-width="3"/>
+  <rect x="24" y="32" width="52" height="22" rx="6" fill="#f7a8b8" stroke="#8f5518" stroke-width="3"/>
+  <path d="M24 42c6 8 10 0 14 8s10 0 14 8 10-2 14 4 8-6 10-2" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M40 32v-10M50 32v-12M60 32v-10" stroke="#1d5a86" stroke-width="4" stroke-linecap="round"/>
+  <path d="M40 18c-3-4 3-6 0-10 5 2 5 8 0 10zM50 16c-3-4 3-6 0-10 5 2 5 8 0 10zM60 18c-3-4 3-6 0-10 5 2 5 8 0 10z" fill="#f2a93b"/>
+ </symbol>
+ <!-- tarte -->
+ <symbol id="i-tarte" viewBox="0 0 100 100">
+  <path d="M10 56h80l-8 28H18z" fill="#d9a15a" stroke="#8f5518" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="50" cy="56" rx="40" ry="14" fill="#f1d9a8" stroke="#8f5518" stroke-width="3"/>
+  <g fill="#fffaf0" stroke="#8f5518" stroke-width="2"><ellipse cx="30" cy="54" rx="6" ry="3.5" transform="rotate(-20 30 54)"/><ellipse cx="46" cy="52" rx="6" ry="3.5"/><ellipse cx="62" cy="54" rx="6" ry="3.5" transform="rotate(20 62 54)"/><ellipse cx="50" cy="60" rx="6" ry="3.5"/><ellipse cx="38" cy="60" rx="5" ry="3" transform="rotate(-10 38 60)"/><ellipse cx="66" cy="60" rx="5" ry="3" transform="rotate(10 66 60)"/></g>
+ </symbol>
+ <!-- pao de lo -->
+ <symbol id="i-pao" viewBox="0 0 100 100">
+  <path d="M12 70c0-30 18-46 38-46s38 16 38 46c0 8-10 12-38 12S12 78 12 70z" fill="#f2c96a" stroke="#8f5518" stroke-width="3"/>
+  <path d="M26 52c8-10 20-14 24-14M62 40c8 4 14 10 16 18" stroke="#fff3d6" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M18 72c10 6 54 6 64 0" stroke="#c98a3b" stroke-width="3" fill="none"/>
+  <path d="M36 28l2 8M50 24v9M64 28l-2 8" stroke="#8f5518" stroke-width="2.5" stroke-linecap="round"/>
+ </symbol>
+ <!-- bolo-rei -->
+ <symbol id="i-rei" viewBox="0 0 100 100">
+  <ellipse cx="50" cy="58" rx="40" ry="26" fill="#d99a4a" stroke="#8f5518" stroke-width="3"/>
+  <ellipse cx="50" cy="56" rx="14" ry="8" fill="#f4e6cc" stroke="#8f5518" stroke-width="3"/>
+  <g stroke="#8f5518" stroke-width="1.5"><circle cx="24" cy="54" r="5" fill="#c4413a"/><circle cx="36" cy="42" r="5" fill="#3d9b57"/><circle cx="56" cy="38" r="5" fill="#f2c64a"/><circle cx="74" cy="48" r="5" fill="#c4413a"/><circle cx="78" cy="64" r="4.5" fill="#3d9b57"/><circle cx="62" cy="76" r="5" fill="#f2c64a"/><circle cx="36" cy="72" r="5" fill="#c4413a"/><circle cx="20" cy="66" r="4" fill="#f2c64a"/></g>
+  <path d="M30 20l8 10 12-14 12 14 8-10-4 20H34z" fill="#f2c64a" stroke="#8f5518" stroke-width="2.5" stroke-linejoin="round"/>
+ </symbol>
+ <!-- bolo-rainha -->
+ <symbol id="i-rainha" viewBox="0 0 100 100">
+  <ellipse cx="50" cy="60" rx="40" ry="24" fill="#e7b571" stroke="#8f5518" stroke-width="3"/>
+  <ellipse cx="50" cy="58" rx="13" ry="7" fill="#f4e6cc" stroke="#8f5518" stroke-width="3"/>
+  <g fill="#fffaf0" stroke="#8f5518" stroke-width="1.8"><ellipse cx="26" cy="56" rx="6" ry="3.5" transform="rotate(-30 26 56)"/><ellipse cx="36" cy="44" rx="6" ry="3.5" transform="rotate(-50 36 44)"/><ellipse cx="54" cy="40" rx="6" ry="3.5" transform="rotate(10 54 40)"/><ellipse cx="72" cy="48" rx="6" ry="3.5" transform="rotate(40 72 48)"/><ellipse cx="76" cy="64" rx="6" ry="3.5" transform="rotate(80 76 64)"/><ellipse cx="60" cy="77" rx="6" ry="3.5"/><ellipse cx="38" cy="74" rx="6" ry="3.5" transform="rotate(-20 38 74)"/></g>
+  <path d="M42 22l8 6 8-6" stroke="#1d5a86" stroke-width="4" stroke-linecap="round" fill="none"/>
+ </symbol>
+ <!-- tronco -->
+ <symbol id="i-tronco" viewBox="0 0 100 100">
+  <rect x="10" y="36" width="80" height="38" rx="19" fill="#6b3f26" stroke="#3a2316" stroke-width="3"/>
+  <ellipse cx="82" cy="55" rx="9" ry="19" fill="#f1d9a8" stroke="#3a2316" stroke-width="3"/>
+  <path d="M82 46c-5 0-5 8 0 8s5 8 0 8" stroke="#6b3f26" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M22 46h40M20 58h50M28 68h34" stroke="#8a5a38" stroke-width="3" stroke-linecap="round"/>
+  <g><circle cx="30" cy="34" r="5" fill="#c4413a"/><circle cx="40" cy="31" r="4" fill="#c4413a"/><path d="M48 33c6-8 12-8 14-4-6 0-8 4-14 4zM58 34c6-6 12-4 12 0-6 1-8 3-12 0z" fill="#3d9b57" stroke="#245c34" stroke-width="1.5"/></g>
+ </symbol>
+ <!-- salgados -->
+ <symbol id="i-salg" viewBox="0 0 100 100">
+  <path d="M12 74c-4-22 16-44 28-40 10 4 14 26 8 40z" fill="#e6a94a" stroke="#8f5518" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M52 78c-2-24 10-44 24-44s22 22 14 44z" fill="#d99a4a" stroke="#8f5518" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M24 62c4-8 8-14 14-18M64 62c4-10 8-16 14-18" stroke="#fff3d6" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/>
+  <path d="M8 82h84" stroke="#8f5518" stroke-width="3" stroke-linecap="round"/>
+ </symbol>
+</defs>
+</svg>
+
+<!-- A página toda é React (src/App.jsx). Sem JS, fica esta abertura simples. -->
+<div id="raiz">
+  <div class="demo" role="note"><b aria-hidden="true"></b>Modelo de demonstração · negócio fictício</div>
+  <section class="hero hero-estatico">
+    <div class="wrap">
+      <p class="kicker">Encomendas online · Aveiro</p>
+      <h1>Pastelaria tradicional,<br><em>agora à distância de um toque.</em></h1>
+      <p class="lead">Encomende os seus bolos e ovos moles online, a qualquer hora.</p>
+      <noscript><p class="lead">A encomenda online precisa de JavaScript ativo no navegador.</p></noscript>
+    </div>
+  </section>
+</div>
+<div id="ui-raiz"></div>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-PT">
-<head><meta name="robots" content="noindex">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Helena Brandão · Psicologia | Psicóloga no Porto (modelo de demonstração)</title>
@@ -16,8 +16,8 @@
    "reduzir movimento" no sistema, tudo aparece parado e legível. */
 if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-mov');
 </script>
-  <script defer src="./assets/index-CIcWcDjh.js"></script>
-  <link rel="stylesheet" href="./assets/style-DEZB-QUz.css">
+  <script defer src="./assets/index-BzQ-wVkE.js"></script>
+  <link rel="stylesheet" href="./assets/style-Cg_ObAvi.css">
 </head>
 <body>
 
@@ -70,6 +70,9 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
   </section>
 </noscript>
 
+<!-- FAIXA DE VALORES (React: Faixa) -->
+<div class="faixa-valores" id="faixa-raiz"><ul class="faixa-estatica"><li>Sigilo profissional</li><li>Presencial ou online</li><li>Horários até às 21:00</li><li>Marcação em 30 segundos</li></ul></div>
+
 <!-- COMO FUNCIONA -->
 <section class="sec" id="como">
   <div class="wrap">
@@ -77,11 +80,13 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
       <p class="eyebrow" data-mov="sobe">Como funciona</p>
       <h2 data-mov="linhas">Do primeiro passo<br>à primeira conversa</h2>
     </div>
-    <ol class="how" data-mov="cascata">
+    <div id="linha-raiz">
+    <ol class="how">
       <li><span class="n" aria-hidden="true">1</span><h3>Marque online</h3><p>Escolha o tipo de consulta, o dia e a hora em cerca de 30 segundos.</p></li>
       <li><span class="n" aria-hidden="true">2</span><h3>Conversamos</h3><p>Ouço o que o traz cá, sem pressas e sem julgamentos.</p></li>
       <li><span class="n" aria-hidden="true">3</span><h3>Seguimos ao seu ritmo</h3><p>Decidimos juntos a frequência e os objetivos das próximas consultas.</p></li>
     </ol>
+    </div>
   </div>
 </section>
 
@@ -93,8 +98,8 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
       <h2 data-mov="linhas">Escolha a consulta<br>que melhor se adapta a si</h2>
       <p data-mov="sobe" style="--d:.15s">Todas partem de uma conversa sobre a sua rotina e terminam com um plano claro, simples de seguir.</p>
     </div>
-    <div class="svc-grid" data-mov="cascata">
-      <article class="svc">
+    <div class="svc-grid u-desliza" data-mov="cascata">
+      <article class="svc" data-luz data-inclina>
         <div class="ico" aria-hidden="true"><svg class="ic"><use href="#i-pin"/></svg></div>
         <h3>Consulta de psicologia individual</h3>
         <p>Um espaço de escuta no consultório, no centro do Porto.</p>
@@ -108,7 +113,7 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
           <a class="btn btn-ghost" href="#marcar" data-pick="individual">Marcar esta consulta</a>
         </div>
       </article>
-      <article class="svc">
+      <article class="svc" data-luz data-inclina>
         <div class="ico" aria-hidden="true"><svg class="ic"><use href="#i-video"/></svg></div>
         <h3>Consulta online</h3>
         <p>A mesma atenção, por videochamada, a partir de um lugar onde se sinta bem.</p>
@@ -122,7 +127,7 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
           <a class="btn btn-ghost" href="#marcar" data-pick="online">Marcar esta consulta</a>
         </div>
       </article>
-      <article class="svc hl">
+      <article class="svc hl" data-luz data-inclina>
         <div class="ico" aria-hidden="true"><svg class="ic"><use href="#i-heart"/></svg></div>
         <h3>Terapia de casal</h3>
         <p>Um espaço neutro para dois, onde cada pessoa pode ser ouvida.</p>
@@ -137,14 +142,18 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
         </div>
       </article>
       </div>
+    <p class="u-desliza-dica" aria-hidden="true"><i></i>Deslize para ver as três consultas</p>
     <p class="note">Preços fictícios, apenas para este modelo de demonstração.</p>
   </div>
 </section>
 
+<!-- UM ESPAÇO SÓ SEU: cartão que expande com o scroll (React) -->
+<div id="esp-raiz"></div>
+
 <!-- SOBRE -->
 <section class="sec about" id="sobre">
   <div class="wrap about-grid">
-    <div class="portrait">
+    <div class="portrait" data-inclina>
       <svg viewBox="0 0 360 440" role="img" aria-label="Avatar com as iniciais HB" data-mov="par">
         <defs><linearGradient id="gP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A9CDD0"/><stop offset="1" stop-color="#3F808A"/></linearGradient></defs>
         <rect width="360" height="440" fill="url(#gP)"/>
@@ -188,7 +197,7 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
     </div>
     <div class="res-grid">
       <figure class="res-cmp" data-mov="sobe">
-        <div class="cmp-box" id="cmp">
+        <div class="cmp-box" id="cmp" data-cursor="Arrastar">
           <!-- ANTES: fica por cima e é cortada pela alça (clip-path) -->
           <div class="cmp-cam cmp-antes">
             <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Antes: às 21:30, um telemóvel mostra Chamada não atendida, o consultório tem a placa Fechado, um email está a aguardar resposta e a pessoa hesita, de mão no queixo.">
@@ -287,9 +296,9 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
       </figure>
 
       <ul class="res-met" data-mov="cascata" aria-label="Números da marcação">
-        <li><span class="met-n" aria-hidden="true"><span data-conta="24" data-suf=" h">24 h</span></span><span class="sr">24 horas </span><span class="met-t">por dia para marcar</span></li>
-        <li><span class="met-n" aria-hidden="true"><span data-conta="30" data-suf=" s">30 s</span></span><span class="sr">30 segundos </span><span class="met-t">para escolher dia e hora</span></li>
-        <li><span class="met-n" aria-hidden="true"><span data-conta="0">0</span></span><span class="sr">Zero </span><span class="met-t">chamadas por atender</span></li>
+        <li data-luz><span class="met-n" aria-hidden="true"><span data-conta="24" data-suf=" h">24 h</span></span><span class="sr">24 horas </span><span class="met-t">por dia para marcar</span></li>
+        <li data-luz><span class="met-n" aria-hidden="true"><span data-conta="30" data-suf=" s">30 s</span></span><span class="sr">30 segundos </span><span class="met-t">para escolher dia e hora</span></li>
+        <li data-luz><span class="met-n" aria-hidden="true"><span data-conta="0">0</span></span><span class="sr">Zero </span><span class="met-t">chamadas por atender</span></li>
       </ul>
 
       <figure class="tcard res-quote" data-mov="sobe">
@@ -327,15 +336,15 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
         <h3 id="h1s" tabindex="-1">Que tipo de consulta pretende?</h3>
         <p class="hint">Escolha uma opção para continuar.</p>
         <div class="opts">
-          <button type="button" class="opt" data-type="individual" aria-pressed="false" style="--i:0">
+          <button type="button" class="opt" data-luz data-type="individual" aria-pressed="false" style="--i:0">
             <span class="ico" aria-hidden="true"><svg class="ic"><use href="#i-pin"/></svg></span>
             <span><strong>Consulta de psicologia individual</strong><small>50 min · 60 € · Rua das Flores, Porto</small></span>
           </button>
-          <button type="button" class="opt" data-type="online" aria-pressed="false" style="--i:1">
+          <button type="button" class="opt" data-luz data-type="online" aria-pressed="false" style="--i:1">
             <span class="ico" aria-hidden="true"><svg class="ic"><use href="#i-video"/></svg></span>
             <span><strong>Consulta online</strong><small>50 min · 55 € · Videochamada</small></span>
           </button>
-          <button type="button" class="opt" data-type="casal" aria-pressed="false" style="--i:2">
+          <button type="button" class="opt" data-luz data-type="casal" aria-pressed="false" style="--i:2">
             <span class="ico" aria-hidden="true"><svg class="ic"><use href="#i-heart"/></svg></span>
             <span><strong>Terapia de casal</strong><small>60 min · 75 € · Rua das Flores, Porto</small></span>
           </button>
@@ -434,26 +443,29 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
 
 <!-- TESTEMUNHOS -->
 <section class="sec" id="testemunhos">
-  <div class="wrap">
+  <div class="wrap tst-grid">
     <div class="sec-head">
       <p class="eyebrow" data-mov="sobe">Testemunhos</p>
-      <h2 data-mov="linhas">O que dizem as pessoas<br>que passaram por cá</h2>
+      <h2 data-mov="linhas">O que dizem<br>as pessoas que<br>passaram por cá</h2>
+      <p data-mov="sobe" style="--d:.15s">Arraste o cartão para o lado (ou use as setas) para ler o seguinte.</p>
+      <p class="note">Testemunhos ilustrativos, escritos para este modelo de demonstração.</p>
     </div>
+    <div id="pilha-raiz">
     <div class="tgrid">
-      <figure class="tcard" data-mov="cartao">
+      <figure class="tcard">
         <blockquote>Senti-me ouvida desde o primeiro minuto. Sem pressas e sem julgamentos.</blockquote>
         <figcaption class="who"><span class="i" aria-hidden="true">AM</span><div><strong>Ana M.</strong><span>Consulta individual</span></div></figcaption>
       </figure>
-      <figure class="tcard" data-mov="cartao">
+      <figure class="tcard">
         <blockquote>Poder marcar à noite e fazer a consulta online encaixou na minha rotina.</blockquote>
         <figcaption class="who"><span class="i c2" aria-hidden="true">RP</span><div><strong>Rui P.</strong><span>Consulta online</span></div></figcaption>
       </figure>
-      <figure class="tcard" data-mov="cartao">
+      <figure class="tcard">
         <blockquote>Foi fácil dar o primeiro passo. O ambiente é calmo e a conversa fluiu com naturalidade.</blockquote>
         <figcaption class="who"><span class="i c3" aria-hidden="true">IC</span><div><strong>Inês C.</strong><span>Terapia de casal</span></div></figcaption>
       </figure>
     </div>
-    <p class="note">Testemunhos ilustrativos, escritos para este modelo de demonstração.</p>
+    </div>
   </div>
 </section>
 
@@ -465,26 +477,41 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
       <h2 data-mov="linhas">Ainda tem dúvidas?</h2>
     </div>
     <div class="faq" data-mov="cascata">
-      <details>
+      <details data-luz>
         <summary>O que se diz na consulta é confidencial?</summary>
         <p>Sim. A Dra. Helena Brandão está sujeita a sigilo profissional: o que partilha em consulta não é comunicado a terceiros, salvo nos casos previstos na lei.</p>
       </details>
-      <details>
+      <details data-luz>
         <summary>Como decorre a primeira consulta?</summary>
         <p>É uma conversa para nos conhecermos: ouço o que o traz cá, esclareço como trabalho e combinamos, em conjunto, a frequência e o ritmo das consultas seguintes. Não tem de ter tudo claro à partida.</p>
       </details>
-      <details>
+      <details data-luz>
         <summary>A consulta online é igual à presencial?</summary>
         <p>A conversa e o acompanhamento seguem o mesmo método. Só precisa de um lugar tranquilo e privado, e de uma ligação à internet estável. A ligação de videochamada é enviada por email.</p>
       </details>
-      <details>
+      <details data-luz>
         <summary>Posso pedir reembolso ao meu seguro?</summary>
         <p>Depende do seu seguro. Todas as consultas têm fatura-recibo, que pode apresentar à seguradora; convém confirmar antes as condições da sua apólice.</p>
       </details>
-      <details>
+      <details data-luz>
         <summary>Posso remarcar ou cancelar?</summary>
         <p>Pode, sem custos, até 24 h antes da hora marcada. Basta responder ao lembrete que recebe por SMS ou email.</p>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- FECHO: chamada final -->
+<section class="sec fecho" id="comecar">
+  <div class="wrap">
+    <div class="fecho-caixa dark" data-luz>
+      <p class="eyebrow" data-mov="sobe">Primeira consulta</p>
+      <h2 data-mov="linhas">Não precisa de ter<br>tudo resolvido.</h2>
+      <p class="fecho-t" data-mov="sobe" style="--d:.15s">Escolha o dia e a hora em cerca de 30 segundos, presencialmente ou online. Não pedimos nenhuma informação clínica para marcar.</p>
+      <div class="fecho-acts" data-mov="sobe" style="--d:.25s">
+        <a class="btn btn-primary btn-xl" href="#marcar">Marcar consulta <span aria-hidden="true">→</span></a>
+        <a class="btn btn-claro" href="#faq">Ler as perguntas frequentes</a>
+      </div>
     </div>
   </div>
 </section>
@@ -503,14 +530,15 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
       </div>
       <div>
         <h4>Contacto</h4>
-        <address>Rua das Flores, 000, Porto<br>Telefone: +351 900 000 000<br>Cédula OPP n.º 00000</address>
+        <address>Rua das Flores, 000, Porto<br>Telefone: +351 900 000 000<br>Cédula OPP n.º 00000<br>NIF 000 000 000 · Registo ERS n.º 00000</address>
       </div>
       <div>
         <h4>Horário</h4>
         <address>Segunda a sexta: 10:00 – 21:30<br>Sábado: 10:00 – 15:30<br>Domingo: encerrado</address>
       </div>
     </div>
-    <div class="foot-bar">Nomes, morada, telefone e cédula são inventados.</div>
+    <div class="foot-bar">Nomes, morada, telefone, cédula, NIF e registo ERS são inventados.</div>
+    <div id="assin-raiz"></div>
     <div class="demo demo-foot" role="note"><b aria-hidden="true"></b>Modelo de demonstração · negócio fictício</div>
   </div>
 </footer>
@@ -522,8 +550,9 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentEl
     No site real, abre a conversa no WhatsApp do consultório
     <button type="button" class="wa-x" id="wa-x" aria-label="Fechar aviso">&times;</button>
   </div>
-  <button type="button" class="wa-btn" id="wa-btn" aria-label="Falar no WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></button>
+  <button type="button" class="wa-btn" id="wa-btn" data-iman aria-label="Falar no WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></button>
 </div>
 
+<div id="ui-raiz"></div>
 </body>
 </html>
