@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flor de São Bernardo · Cardápio e encomendas (proposta de demonstração)</title>
+<meta name="description" content="Proposta de demonstração: cardápio interativo com pedido por WhatsApp para a Flor de São Bernardo, padaria e pastelaria em Aveiro. Não é o site oficial.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F6B91C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%23F6B91C%27/%3E%3Cpath d=%27M16 24c0-6 0-10-1-14M16 16c-3-2-6-2-8 0 3 1 6 1 8 0zM16 13c2-3 5-4 8-3-2 2-5 3-8 3zM16 11c-1-3 0-5 2-7 1 3 0 5-2 7z%27 fill=%27%23fff%27 stroke=%27%23fff%27 stroke-width=%271.5%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <script defer src="./assets/index-DmvAxV36.js"></script>
+  <link rel="stylesheet" href="./assets/style-DAqvGwc1.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+ <!-- flor da marca (desenho próprio, inspirado no logótipo) -->
+ <symbol id="i-flor" viewBox="0 0 64 64">
+  <g fill="#fff" stroke="#fff" stroke-linejoin="round">
+   <path d="M30 56c2-12 2-22 0-32" fill="none" stroke-width="3" stroke-linecap="round"/>
+   <path d="M30 40C22 30 10 30 4 36c8 6 18 8 26 4z"/>
+   <path d="M30 32c2-12 12-20 26-18-4 10-14 18-26 18z"/>
+   <path d="M30 26c-6-8-6-16 0-22 6 6 6 14 0 22z"/>
+   <path d="M30 30C26 20 18 16 10 18c4 8 12 12 20 12z" opacity=".85"/>
+  </g>
+ </symbol>
+ <!-- padaria -->
+ <symbol id="i-pao" viewBox="0 0 100 100">
+  <path d="M10 66c0-22 18-38 40-38s40 16 40 38c0 8-8 12-40 12S10 74 10 66z" fill="#E3A24A" stroke="#6B4320" stroke-width="3"/>
+  <path d="M32 44l8 14M48 40l6 16M64 44l4 14" stroke="#FFE7B3" stroke-width="4" stroke-linecap="round"/>
+ </symbol>
+ <symbol id="i-carcaca" viewBox="0 0 100 100">
+  <ellipse cx="50" cy="58" rx="38" ry="24" fill="#EDB25C" stroke="#6B4320" stroke-width="3"/>
+  <path d="M50 36v44" stroke="#FFE7B3" stroke-width="5" stroke-linecap="round"/>
+  <path d="M26 50c4-8 10-12 16-12M74 50c-4-8-10-12-16-12" stroke="#C47F2C" stroke-width="3" stroke-linecap="round" fill="none"/>
+ </symbol>
+ <symbol id="i-broa" viewBox="0 0 100 100">
+  <path d="M14 70c-2-26 16-46 36-46s38 20 36 46c-1 6-14 10-36 10S15 76 14 70z" fill="#D9A441" stroke="#6B4320" stroke-width="3"/>
+  <g fill="#8C5A26"><circle cx="34" cy="46" r="2.5"/><circle cx="52" cy="38" r="2.5"/><circle cx="66" cy="50" r="2.5"/><circle cx="44" cy="58" r="2.5"/><circle cx="60" cy="64" r="2.5"/><circle cx="28" cy="62" r="2.5"/><circle cx="74" cy="62" r="2.5"/></g>
+ </symbol>
+ <symbol id="i-forma" viewBox="0 0 100 100">
+  <path d="M18 80V44c0-14 10-20 32-20s32 6 32 20v36z" fill="#F0C27A" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M26 80V48c0-8 8-12 24-12s24 4 24 12v32" fill="#FFF1D2" stroke="#6B4320" stroke-width="2.5"/>
+  <path d="M14 80h72" stroke="#6B4320" stroke-width="3" stroke-linecap="round"/>
+ </symbol>
+ <symbol id="i-regueifa" viewBox="0 0 100 100">
+  <g fill="#F2B75B" stroke="#6B4320" stroke-width="3"><ellipse cx="28" cy="60" rx="18" ry="14"/><ellipse cx="50" cy="52" rx="18" ry="16"/><ellipse cx="72" cy="60" rx="18" ry="14"/></g>
+  <path d="M20 52c4-4 10-5 14-4M44 42c4-3 10-3 14 0M66 52c4-3 10-3 14 1" stroke="#FFE7B3" stroke-width="3" stroke-linecap="round" fill="none"/>
+ </symbol>
+ <!-- pastelaria -->
+ <symbol id="i-nata" viewBox="0 0 100 100">
+  <path d="M14 52h72l-8 28H22z" fill="#E7A957" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M22 60h56M26 70h48" stroke="#C47F2C" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="50" cy="50" rx="36" ry="12" fill="#F8D774" stroke="#6B4320" stroke-width="3"/>
+  <g fill="#5A3417"><ellipse cx="40" cy="48" rx="7" ry="3.5"/><ellipse cx="60" cy="51" rx="6" ry="3"/><ellipse cx="52" cy="45" rx="4" ry="2"/></g>
+ </symbol>
+ <symbol id="i-berlim" viewBox="0 0 100 100">
+  <ellipse cx="50" cy="56" rx="38" ry="28" fill="#E2A24E" stroke="#6B4320" stroke-width="3"/>
+  <path d="M14 58c12 6 60 6 72 0" stroke="#FFF1D2" stroke-width="7" stroke-linecap="round"/>
+  <path d="M30 59c8 3 32 3 40 0" stroke="#F6C343" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#fff"><circle cx="34" cy="40" r="2"/><circle cx="50" cy="34" r="2"/><circle cx="64" cy="40" r="2"/><circle cx="42" cy="46" r="1.6"/><circle cx="58" cy="46" r="1.6"/></g>
+ </symbol>
+ <symbol id="i-croissant" viewBox="0 0 100 100">
+  <path d="M8 66c6-20 22-34 42-34s36 14 42 34c-8 2-14-2-18-8-4 10-14 14-24 14s-20-4-24-14c-4 6-10 10-18 8z" fill="#EBAE55" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M38 36c-2 10-1 22 4 34M62 36c2 10 1 22-4 34M50 32v38" stroke="#B9732A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+ </symbol>
+ <symbol id="i-queque" viewBox="0 0 100 100">
+  <path d="M24 52h52l-6 32H30z" fill="#F7E1A6" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M36 54l2 30M50 54v30M64 54l-2 30" stroke="#D8B66A" stroke-width="2.5"/>
+  <path d="M20 54c0-18 12-28 30-28s30 10 30 28z" fill="#E9B04F" stroke="#6B4320" stroke-width="3"/>
+  <path d="M36 38c4-4 10-6 14-6" stroke="#FFE7B3" stroke-width="3" stroke-linecap="round" fill="none"/>
+ </symbol>
+ <symbol id="i-cupcake" viewBox="0 0 100 100">
+  <path d="M26 56h48l-6 28H32z" fill="#F6C343" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M38 58l2 26M50 58v26M62 58l-2 26" stroke="#D99B1C" stroke-width="2.5"/>
+  <path d="M22 58c-4-10 6-16 12-14 0-10 10-16 16-16s16 6 16 16c6-2 16 4 12 14z" fill="#F7B6C2" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="50" cy="24" r="6" fill="#D6334A" stroke="#6B4320" stroke-width="2.5"/>
+  <g fill="#fff"><circle cx="36" cy="48" r="1.8"/><circle cx="58" cy="40" r="1.8"/><circle cx="64" cy="50" r="1.8"/><circle cx="46" cy="38" r="1.8"/></g>
+ </symbol>
+ <symbol id="i-milfolhas" viewBox="0 0 100 100">
+  <rect x="16" y="34" width="68" height="12" rx="3" fill="#FFF7E6" stroke="#6B4320" stroke-width="3"/>
+  <path d="M30 40c6-3 10 3 16 0s10 3 16 0 8 3 12 0" stroke="#6B3F26" stroke-width="2" fill="none"/>
+  <rect x="16" y="46" width="68" height="8" fill="#E7A957" stroke="#6B4320" stroke-width="3"/>
+  <rect x="16" y="54" width="68" height="10" fill="#F8DF8C" stroke="#6B4320" stroke-width="3"/>
+  <rect x="16" y="64" width="68" height="8" rx="2" fill="#E7A957" stroke="#6B4320" stroke-width="3"/>
+ </symbol>
+ <!-- Aveiro -->
+ <symbol id="i-ovos" viewBox="0 0 100 100">
+  <path d="M50 18c-22 0-38 20-40 38 0 8 8 14 16 12 5 6 14 8 24 8s19-2 24-8c8 2 16-4 16-12-2-18-18-38-40-38z" fill="#F4D49A" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M50 24v46M36 28l6 42M64 28l-6 42M26 38l12 32M74 38l-12 32" stroke="#6B4320" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+ </symbol>
+ <symbol id="i-paolo" viewBox="0 0 100 100">
+  <path d="M12 70c0-30 18-46 38-46s38 16 38 46c0 8-10 12-38 12S12 78 12 70z" fill="#F2C96A" stroke="#6B4320" stroke-width="3"/>
+  <path d="M38 58c4-6 8-8 12-8s8 2 12 8c-4 4-8 6-12 6s-8-2-12-6z" fill="#FFE27A" stroke="#C47F2C" stroke-width="2"/>
+  <path d="M18 72c10 6 54 6 64 0" stroke="#C98A3B" stroke-width="3" fill="none"/>
+ </symbol>
+ <symbol id="i-tripa" viewBox="0 0 100 100">
+  <path d="M14 48c0-8 6-12 14-12h44c8 0 14 4 14 12v12c0 8-6 12-14 12H28c-8 0-14-4-14-12z" fill="#F0C27A" stroke="#6B4320" stroke-width="3"/>
+  <path d="M24 54h52" stroke="#F8D774" stroke-width="7" stroke-linecap="round"/>
+  <g fill="#fff"><circle cx="30" cy="44" r="1.8"/><circle cx="46" cy="42" r="1.8"/><circle cx="62" cy="44" r="1.8"/><circle cx="38" cy="64" r="1.8"/><circle cx="58" cy="64" r="1.8"/></g>
+ </symbol>
+ <!-- salgados -->
+ <symbol id="i-salg" viewBox="0 0 100 100">
+  <path d="M10 70c0-20 18-36 40-36s40 16 40 36z" fill="#E6A94A" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M14 70c4 4 8-2 12 2s8-2 12 2 8-2 12 2 8-2 12 2 8-2 12 2 8-2 12 0" stroke="#6B4320" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <g fill="#FFF1D2"><circle cx="36" cy="52" r="2"/><circle cx="52" cy="46" r="2"/><circle cx="64" cy="56" r="2"/></g>
+ </symbol>
+ <symbol id="i-croquete" viewBox="0 0 100 100">
+  <rect x="14" y="40" width="72" height="30" rx="15" fill="#C9822E" stroke="#6B4320" stroke-width="3"/>
+  <g fill="#8C5A26"><circle cx="30" cy="50" r="2"/><circle cx="44" cy="58" r="2"/><circle cx="56" cy="48" r="2"/><circle cx="70" cy="58" r="2"/><circle cx="38" cy="62" r="1.6"/><circle cx="62" cy="62" r="1.6"/></g>
+ </symbol>
+ <!-- bolos por encomenda -->
+ <symbol id="i-bolo" viewBox="0 0 100 100">
+  <rect x="16" y="52" width="68" height="32" rx="6" fill="#FFF1D2" stroke="#6B4320" stroke-width="3"/>
+  <path d="M16 62c6 6 10-2 17 4s10-2 17 4 10-2 17 4 10-2 17-4" stroke="#F6B91C" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="26" y="32" width="48" height="22" rx="6" fill="#F7B6C2" stroke="#6B4320" stroke-width="3"/>
+  <path d="M40 32v-10M50 32v-12M60 32v-10" stroke="#6B4320" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M40 18c-3-4 3-6 0-10 5 2 5 8 0 10zM50 16c-3-4 3-6 0-10 5 2 5 8 0 10zM60 18c-3-4 3-6 0-10 5 2 5 8 0 10z" fill="#F6B91C"/>
+ </symbol>
+ <symbol id="i-infantil" viewBox="0 0 100 100">
+  <rect x="18" y="46" width="64" height="38" rx="8" fill="#9ED7C4" stroke="#6B4320" stroke-width="3"/>
+  <path d="M18 58c8 6 12-4 20 2s12-4 20 2 12-4 24 0" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g fill="#F6B91C" stroke="#6B4320" stroke-width="3"><circle cx="38" cy="19" r="6"/><circle cx="62" cy="19" r="6"/></g>
+  <circle cx="50" cy="30" r="14" fill="#F6B91C" stroke="#6B4320" stroke-width="3"/>
+  <circle cx="45" cy="28" r="2" fill="#6B4320"/><circle cx="55" cy="28" r="2" fill="#6B4320"/>
+  <path d="M44 34c4 4 8 4 12 0" stroke="#6B4320" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+ </symbol>
+ <symbol id="i-batizado" viewBox="0 0 100 100">
+  <rect x="14" y="50" width="72" height="32" rx="6" fill="#FFF7F0" stroke="#6B4320" stroke-width="3"/>
+  <path d="M14 60h72" stroke="#BFD9F2" stroke-width="5"/>
+  <path d="M50 46c-8-12-26-6-18 6 4 6 18 12 18 12s14-6 18-12c8-12-10-18-18-6z" fill="#BFD9F2" stroke="#6B4320" stroke-width="2.5"/>
+  <path d="M50 22v14M43 28h14" stroke="#F6B91C" stroke-width="4" stroke-linecap="round"/>
+ </symbol>
+ <symbol id="i-casamento" viewBox="0 0 100 100">
+  <rect x="18" y="62" width="64" height="24" rx="4" fill="#FFF8EC" stroke="#6B4320" stroke-width="3"/>
+  <rect x="28" y="42" width="44" height="20" rx="4" fill="#FFF8EC" stroke="#6B4320" stroke-width="3"/>
+  <rect x="38" y="26" width="24" height="16" rx="4" fill="#FFF8EC" stroke="#6B4320" stroke-width="3"/>
+  <g fill="#F6B91C" stroke="#6B4320" stroke-width="1.5"><circle cx="30" cy="62" r="4"/><circle cx="70" cy="62" r="4"/><circle cx="50" cy="42" r="4"/><circle cx="56" cy="26" r="3.5"/></g>
+  <path d="M30 74c6 3 34 3 40 0" stroke="#C9B48A" stroke-width="2" fill="none"/>
+ </symbol>
+ <symbol id="i-tabuleiro" viewBox="0 0 100 100">
+  <path d="M8 66l14-26h56l14 26z" fill="#F7E1A6" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M8 66v8h84v-8" fill="#E7A957" stroke="#6B4320" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M30 54c4-6 8 2 12-2M46 50c4-4 8 2 12-2" stroke="#D6334A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <g fill="#F7B6C2"><circle cx="66" cy="54" r="3"/><circle cx="26" cy="60" r="2.5"/></g>
+ </symbol>
+</defs>
+</svg>
+
+<!-- A página toda é React (src/App.jsx). Sem JS, fica esta abertura com o contacto. -->
+<div id="raiz">
+  <div class="demo" role="note"><b aria-hidden="true"></b>Proposta de demonstração · não é o site oficial · preços ilustrativos</div>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Padaria e Pastelaria · Aveiro</p>
+      <h1>O cardápio da <em>Flor</em>, para pedir num minuto.</h1>
+      <noscript><p>Para encomendar, ligue para o 234 343 993.</p></noscript>
+    </div>
+  </section>
+</div>
+<div id="ui-raiz"></div>
+
+</body>
+</html>
